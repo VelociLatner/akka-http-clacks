@@ -16,8 +16,8 @@ ____
 - U: Turn the message around at the end of the line, and send it back again.
 
 == Installation
-Add the jar file to your dependencies:
 
+Add the jar file to your dependencies:
 [source, scala]
 ----
 libraryDependencies += "com.velocilatner" % "akka-http-clacks" % "0.1.0"
@@ -30,3 +30,26 @@ libraryDependencies += "com.typesafe.akka" %% "akka-http-experimental" % "2.4.10
 ----
 
 == Usage
+
+Wrap the entire route...
+[source, scala]
+----
+import com.velocilatner.ClacksOverhead
+
+val (host, port) = (???, ???)
+val myRoute = complete { "Add headers to this." }
+
+Http().bindAndHandle( ClacksOverhead.passAlong(myRoute), host, port )
+----
+
+...or mix in the trait, and include it as a directive.
+[source, scala]
+----
+import com.velocilatner.ClacksOverhead
+
+class MyRoutes extends ClacksOverhead {
+
+  val myRoute = withClacks { complete { "Add headers to this." } }
+
+}
+----
