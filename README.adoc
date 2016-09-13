@@ -5,6 +5,8 @@ AKKA-HTTP GNU Terry Pratchett
 
 
 Keeping the legacy of Sir Terry Pratchett alive. (See this reddit thread: http://www.reddit.com/r/discworld/comments/2yt9j6/gnu_terry_pratchett/)
+
+Or check out the website: http://www.gnuterrypratchett.com/
 ____
 "For as long as his name is passed along the Clacks, Death cannot have him."
 ____
