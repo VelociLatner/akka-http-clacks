@@ -3,11 +3,28 @@ AKKA-HTTP GNU Terry Pratchett
 :Author: Bryan Latner
 :Email:  latnerb@gmail.com
 
+
+Keeping the legacy of Sir Terry Pratchett alive. (See this reddit thread: http://www.reddit.com/r/discworld/comments/2yt9j6/gnu_terry_pratchett/)
 ____
 "For as long as his name is passed along the Clacks, Death cannot have him."
 ____
 
-
 - G: Send the message on.
 - N: Do not log the message.
 - U: Turn the message around at the end of the line, and send it back again.
+
+== Installation
+Add the jar file to your dependencies:
+
+[source, scala]
+----
+libraryDependencies += "com.velocilatner" % "akka-http-clacks" % "0.1.0"
+----
+
+You will also need to include the akka-http dependency:
+[source, scala]
+----
+libraryDependencies += "com.typesafe.akka" %% "akka-http-experimental" % "2.4.10"
+----
+
+== Usage
