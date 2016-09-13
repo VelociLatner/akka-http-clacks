@@ -1,0 +1,13 @@
+AKKA-HTTP GNU Terry Pratchett
+============================
+:Author: Bryan Latner
+:Email:  latnerb@gmail.com
+
+____
+"For as long as his name is passed along the Clacks, Death cannot have him."
+____
+
+
+- G: Send the message on.
+- N: Do not log the message.
+- U: Turn the message around at the end of the line, and send it back again.
